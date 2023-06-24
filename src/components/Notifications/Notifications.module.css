@@ -1,0 +1,17 @@
+@keyframes marquee {
+ 0% {
+   transform: translateX(100%);
+ }
+ 100% {
+   transform: translateX(-100%);
+ }
+}
+
+.message {
+ font-weight: 500;
+ font-size: 36px;
+ color: azure;
+ white-space: nowrap;
+ overflow: hidden;
+ animation: marquee 10s linear infinite;
+}

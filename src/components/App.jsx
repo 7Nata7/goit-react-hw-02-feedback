@@ -3,7 +3,7 @@ import { Section } from '../components/Section/Section'
 import { Statistics } from '../components/Statistics/Statistics'
 import { FeedbackOptions } from '../components/FeedbackOptions/FeedbackOptions'
 import { Notification } from '../components/Notifications/Notifications'
-
+import css from './App.module.css'
 const stateBtn = [
   { id: 'good', title: 'Good' },
   { id: 'neutral', title: 'Neutral' },
@@ -40,7 +40,7 @@ export class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div>
+      <div className={css.section}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={stateBtn}
